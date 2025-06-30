@@ -8,7 +8,10 @@
         <impact>3</impact>
         <renderOrder>175</renderOrder>
         <exclusionTags>
-            <!-- TODO: パッチで排他対象となる既存ミームに対して排他用タグを足して、そのタグを持って排他処理を行う -->
+            <!-- パッチで排他対象となる既存ミームに対して排他用タグを足して、そのタグを持って排他処理を行う -->
+            <li>PR_CM_Austere_Supremacy</li>
+            <li>PR_CM_Austere_Raider</li>
+            <li>PR_CM_Austere_HighLife</li>
         </exclusionTags>
         <requireOne>
             <!-- Precept側にミームを登録するパッチ処理が必要. `Patches` 側で実施済み -->

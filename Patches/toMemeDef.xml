@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <!-- ===== ミーム同士の排他制御 ===== -->
+
+    <!-- 支配者 -->
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/MemeDef[defName="Supremacist"]/exclusionTags</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/MemeDef[defName="Supremacist"]</xpath>
+            <value>
+                <exclusionTags>
+                    <li>PR_CM_Austere_Supremacy</li>
+                </exclusionTags>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/MemeDef[defName="Supremacist"]/exclusionTags</xpath>
+            <value>
+                <li>PR_CM_Austere_Supremacy</li>
+            </value>
+        </match>
+    </Operation>
+
+    <!-- レイダー -->
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/MemeDef[defName="Raider"]/exclusionTags</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/MemeDef[defName="Raider"]</xpath>
+            <value>
+                <exclusionTags>
+                    <li>PR_CM_Austere_Raider</li>
+                </exclusionTags>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/MemeDef[defName="Raider"]/exclusionTags</xpath>
+            <value>
+                <li>PR_CM_Austere_Raider</li>
+            </value>
+        </match>
+    </Operation>
+
+    <!-- 高みの生活 -->
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/MemeDef[defName="HighLife"]/exclusionTags</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/MemeDef[defName="HighLife"]</xpath>
+            <value>
+                <exclusionTags>
+                    <li>PR_CM_Austere_HighLife</li>
+                </exclusionTags>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/MemeDef[defName="HighLife"]/exclusionTags</xpath>
+            <value>
+                <li>PR_CM_Austere_HighLife</li>
+            </value>
+        </match>
+    </Operation>
+
+</Patch>
