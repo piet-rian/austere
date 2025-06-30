@@ -2,13 +2,11 @@
 
 ## Acknowledgment, References
 
-- 実装の参考にしたModを記述
-- 貢献を受け取った場合は貢献の提供者名を記述
+- [[DN] Extra Memes](https://steamcommunity.com/sharedfiles/filedetails/?id=2825316439) を全面的に参考にしました
 
 ## Third Party License
 
-- Modが別の開発物・素材に依存している場合に表記
-  - 名称
-  - 権利者名
-  - 配布先URL
-  - ライセンス表記
+いずれもいわゆる MIT であったりとか CC であったりといったライセンスとは異なるライセンスが設定してあるため、個別の記載は省略
+
+- `Textures\UI\Memes\PRCM_Austere.png`
+  - <https://www.flaticon.com/free-icon/yoga_6807880>

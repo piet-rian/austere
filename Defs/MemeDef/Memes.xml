@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <MemeDef>
+        <defName>PR_CM_AustereLifestyle</defName>
+        <label>austere lifestyle</label>
+        <description>There's much to gain from living a simple yet disicplined life.</description>
+        <iconPath>UI/Memes/PRCM_Austere</iconPath>
+        <impact>3</impact>
+        <renderOrder>175</renderOrder>
+        <exclusionTags>
+            <!-- TODO: パッチで排他対象となる既存ミームに対して排他用タグを足して、そのタグを持って排他処理を行う -->
+        </exclusionTags>
+        <requireOne>
+            <!-- Precept側にミームを登録するパッチ処理が必要. `Patches` 側で実施済み -->
+            <li>
+                <li>Comfort_Ignored</li>
+            </li>
+            <li>
+                <li>SlabBed_Preferred</li>
+            </li>
+            <li>
+                <li>RoughLiving_Welcomed</li>
+            </li>
+            <li>
+                <li>Temperature_Tough</li>
+            </li>
+            <li>
+                <!-- TODO: 欲求種別が反転する点については要検討  -->
+                <li>Indoors_Acceptable</li>
+            </li>
+            <li>
+                <li>NutrientPasteEating_DontMind</li>
+            </li>
+            <li>
+                <li>Slavery_Abhorrent</li>
+                <li>Slavery_Horrible</li>
+                <li>Slavery_Disapproved</li>
+            </li>
+            <li>
+                <li>Skullspike_Disapproved</li>
+            </li>
+
+            <!-- TODO: キノコ戒律.  -->
+        </requireOne>
+
+        <addDesignators>
+            <li>SlabBed</li>
+            <li>SlabDoubleBed</li>
+        </addDesignators>
+
+        <!-- 同意する特性 -->
+        <agreeableTraits>
+            <li>Ascetic</li>
+            <li MayRequire="Ludeon.RimWorld.Biotech">Recluse</li>
+            <DrugDesire>-1</DrugDesire>
+        </agreeableTraits>
+
+        <!-- 相反する特性 -->
+        <disagreeableTraits>
+            <li>Gourmand</li>
+            <li>Greedy</li>
+            <li>Jealous</li>
+            <DrugDesire>1</DrugDesire>
+            <DrugDesire>2</DrugDesire>
+        </disagreeableTraits>
+
+        <veneratedAnimalsCountOffset>0</veneratedAnimalsCountOffset>
+        <generalRules>
+            <!-- TODO: ルール周りが参考元のままなので追って直す -->
+            <rulesStrings>
+                <li>memeAdjective->efficient</li>
+                <li>memeAdjective->austere</li>
+                <li>memeAdjective->strict</li>
+                <li>memeConcept->simplicity</li>
+                <li>memeLeaderNoun->one</li>
+                <li>memeLeaderAdjective->calm</li>
+                <li>memeLeaderAdjective->collected</li>
+                <li>memeLeaderAdjective->simple</li>
+                <li>memeMoralist->calmer</li>
+                <li>memeMoralist->abolisher</li>
+                <li>memeMoralist->shepherd</li>
+                <li>memeHyphenPrefix->simple</li>
+            </rulesStrings>
+        </generalRules>
+        <descriptionMaker>
+            <rules>
+                <!-- TODO: ルール周りが参考元のままなので追って直す -->
+                <rulesStrings>
+                    <!-- theist myth -->
+                    <li>creation(tag=meme_AustereLifestyle) ->[deity0_name] always yearned for a
+                        simple life, so man shall too.</li>
+                    <li>episode(uses=1,tag=meme_AustereLifestyle) ->They worked hard yet didn't
+                        achieve much. [deity0_name] saw, and and taught them to rest.</li>
+                    <!-- theist founder -->
+                    <li>intro(tag=meme_AustereLifestyle) ->The first crashlanded settlers of
+                        [place_name] used to be hardworking people, they build for no reason and
+                        without end. [deity0_name] disliked this, intervened and forced them to
+                        rest.</li>
+                    <li>conflict(tag=meme_AustereLifestyle) ->The zealous [foeLeader] made an edict
+                        abolishing simple livestyles for their people. [deity0_name] was angered as
+                        many [memberNamePlural] were worked to death to achieve [foeLeader] dreams.</li>
+                    <li>founderJoin(tag=meme_AustereLifestyle) ->One day [founderName] the
+                        [place_job] came along and build themselves a simple hut, despite
+                        [foeLeader]s rules in [place_name]. [memberNamePlural] saw this and over
+                        time, many joined which made [deity0_name] very happy.</li>
+                    <li>victory(tag=meme_AustereLifestyle) ->Due to [founderName]'s actions, the
+                        [foeLeader]'s [foeSoldiers] saw [deity0_name]'s truth. Together with the
+                        [memberNamePlural], the [foeSoldiers] went to [foeLeader] and forced them to
+                        work until their death. They now all live a simple lifestyle.</li>
+                    <!-- ideological founder -->
+                    <li>setup(tag=meme_AustereLifestyle) ->[founderName] never saw much in
+                        complexity, building himself, but a simple hut.</li>
+                    <li>story(uses=1,tag=meme_AustereLifestyle) ->Many saw [founderName]'s hut and
+                        tried their lifestyle. Now, it is more than just that.</li>
+                    <!-- ideological lesson -->
+                    <li>lessonIntro(tag=meme_AustereLifestyle) ->I saw many people work themselves
+                        to death to achieve meaningless goals. It was obvious that</li>
+                    <li>lesson(tag=meme_AustereLifestyle) ->a simple lifestyle is all that should be
+                        needed</li>
+                    <li>lesson(tag=meme_AustereLifestyle) ->luxury and complexety are the bane of
+                        our existence</li>
+                    <li>lessonReinforcement(tag=meme_AustereLifestyle) ->Why build extensive villas
+                        for few, when you can house thousands.</li>
+                    <!-- archist -->
+                    <li>archistBasis(tag=meme_AustereLifestyle) ->Archotechs are machines designed
+                        to help the masses.</li>
+                    <li>archistFact(tag=meme_AustereLifestyle) ->The archotechs should want no more
+                        than to assist us in our journey.</li>
+                    <li>archistProphecy(tag=meme_AustereLifestyle) ->[inTheEnd], by enforcing out
+                        lifestyle, the archotechs won't be able to disagree, and join us.</li>
+                    <!-- animist -->
+                    <li>animistFact(tag=meme_AustereLifestyle) ->The spirits can only be calmed if
+                        we ourselves are calm.</li>
+                </rulesStrings>
+            </rules>
+        </descriptionMaker>
+        <symbolPacks>
+            <li>
+                <theme>efficient</theme>
+                <adjective>efficiency</adjective>
+                <member>beneficiary</member>
+            </li>
+            <li>
+                <ideoName>Leisurity</ideoName>
+                <theme>leisureness</theme>
+                <adjective>leisure</adjective>
+                <member>leisured</member>
+            </li>
+        </symbolPacks>
+    </MemeDef>
+</Defs>

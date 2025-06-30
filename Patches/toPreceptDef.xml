@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <!-- TODO: ===== ミーム同士の排他制御 ===== -->
+
+
+    <!-- ===== Precept(戒律)側に "このミームがあれば選択可能" の情報を追加 ===== -->
+    <!--
+        memo:
+        PatchOperationConditional で有無を判断しながら追加しないと
+        "XML RimWorld.PreceptDef defines the same field twice: requiredMemes." のエラーが出る
+    -->
+
+    <!--
+        memo:
+        `associatedMemes` (関連するミーム) 指定については、用途というか効能がいまいちわからないので一旦省略
+        (参考元のExtraMemesでも指定があったりなかったりするので、判断がつけられていない)
+    -->
+
+    <!-- 快適性: 無視 -->
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/PreceptDef[defName="Comfort_Ignored"]/requiredMemes</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/PreceptDef[defName="Comfort_Ignored"]</xpath>
+            <value>
+                <requiredMemes>
+                    <li>PR_CM_AustereLifestyle</li>
+                </requiredMemes>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/PreceptDef[defName="Comfort_Ignored"]/requiredMemes</xpath>
+            <value>
+                <li>PR_CM_AustereLifestyle</li>
+            </value>
+        </match>
+    </Operation>
+
+    <!-- 平板のベッドを使用可能にする -->
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/PreceptDef[defName="SlabBed_Preferred"]/requiredMemes</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/PreceptDef[defName="SlabBed_Preferred"]</xpath>
+            <value>
+                <requiredMemes>
+                    <li>PR_CM_AustereLifestyle</li>
+                </requiredMemes>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/PreceptDef[defName="SlabBed_Preferred"]/requiredMemes</xpath>
+            <value>
+                <li>PR_CM_AustereLifestyle</li>
+            </value>
+        </match>
+    </Operation>
+
+    <!-- 荒い生活: 歓迎 -->
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/PreceptDef[defName="RoughLiving_Welcomed"]/requiredMemes</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/PreceptDef[defName="RoughLiving_Welcomed"]</xpath>
+            <value>
+                <requiredMemes>
+                    <li>PR_CM_AustereLifestyle</li>
+                </requiredMemes>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/PreceptDef[defName="RoughLiving_Welcomed"]/requiredMemes</xpath>
+            <value>
+                <li>PR_CM_AustereLifestyle</li>
+            </value>
+        </match>
+    </Operation>
+
+    <!-- 温度: 屈強 -->
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/PreceptDef[defName="Temperature_Tough"]/requiredMemes</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/PreceptDef[defName="Temperature_Tough"]</xpath>
+            <value>
+                <requiredMemes>
+                    <li>PR_CM_AustereLifestyle</li>
+                </requiredMemes>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/PreceptDef[defName="Temperature_Tough"]/requiredMemes</xpath>
+            <value>
+                <li>PR_CM_AustereLifestyle</li>
+            </value>
+        </match>
+    </Operation>
+
+    <!-- 温度: 屈強 -->
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/PreceptDef[defName="Temperature_Tough"]/requiredMemes</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/PreceptDef[defName="Temperature_Tough"]</xpath>
+            <value>
+                <requiredMemes>
+                    <li>PR_CM_AustereLifestyle</li>
+                </requiredMemes>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/PreceptDef[defName="Temperature_Tough"]/requiredMemes</xpath>
+            <value>
+                <li>PR_CM_AustereLifestyle</li>
+            </value>
+        </match>
+    </Operation>
+
+    <!-- 狭い空間: 気にしない -->
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/PreceptDef[defName="Indoors_Acceptable"]/requiredMemes</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/PreceptDef[defName="Indoors_Acceptable"]</xpath>
+            <value>
+                <requiredMemes>
+                    <li>PR_CM_AustereLifestyle</li>
+                </requiredMemes>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/PreceptDef[defName="Indoors_Acceptable"]/requiredMemes</xpath>
+            <value>
+                <li>PR_CM_AustereLifestyle</li>
+            </value>
+        </match>
+    </Operation>
+
+    <!-- 栄養補給ペースト: 気にしない -->
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/PreceptDef[defName="NutrientPasteEating_DontMind"]/requiredMemes</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/PreceptDef[defName="NutrientPasteEating_DontMind"]</xpath>
+            <value>
+                <requiredMemes>
+                    <li>PR_CM_AustereLifestyle</li>
+                </requiredMemes>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/PreceptDef[defName="NutrientPasteEating_DontMind"]/requiredMemes</xpath>
+            <value>
+                <li>PR_CM_AustereLifestyle</li>
+            </value>
+        </match>
+    </Operation>
+
+</Patch>
