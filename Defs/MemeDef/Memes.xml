@@ -32,6 +32,10 @@
                 <li>NutrientPasteEating_DontMind</li>
             </li>
             <li>
+                <!-- ! キノコを気にしない固有戒律  -->
+                <li>FungusEating_DontMind</li>
+            </li>
+            <li>
                 <li>Slavery_Abhorrent</li>
                 <li>Slavery_Horrible</li>
                 <li>Slavery_Disapproved</li>
@@ -39,8 +43,6 @@
             <li>
                 <li>Skullspike_Disapproved</li>
             </li>
-
-            <!-- TODO: キノコ戒律.  -->
         </requireOne>
 
         <addDesignators>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!-- Precepts -->
+
+    <PreceptDef>
+        <defName>FungusEating_DontMind</defName>
+        <issue>FungusEating</issue>
+        <label>Don't Mind</label>
+        <description>Fungus are a common food, not bad and not good.</description>
+        <impact>Low</impact>
+        <displayOrderInIssue>0</displayOrderInIssue>
+        <displayOrderInImpact>100</displayOrderInImpact>
+        <requiredMemes>
+            <!-- 他ミームの効能は変えないほうがよいと判断し、austereのみで選択可能とした -->
+            <li>PR_CM_AustereLifestyle</li>
+        </requiredMemes>
+
+        <!-- (Ideoの死体を気にしない戒律を実装を見る限り)気にしない系の戒律は心情を変化させるための comps の指定を行わないというのが正しい。 -->
+    </PreceptDef>
+</Defs>
