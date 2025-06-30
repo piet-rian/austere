@@ -1,4 +1,4 @@
-# Austere Lifestyle
+# Convenient meme - Austere Lifestyle
 
 Rimworld の DCL である Ideology 用のミームである "Austere Lifestyle" を追加するMod
 
