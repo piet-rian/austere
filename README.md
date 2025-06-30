@@ -4,6 +4,12 @@ Rimworld の DCL である Ideology 用のミームである "Austere Lifestyle"
 
 Austere の意味合いについては <https://ejje.weblio.jp/content/austere> を参照してください
 
+## ミームの説明の前に
+
+このModは [Zohar](https://steamcommunity.com/sharedfiles/filedetails/?id=3504125251) と組み合わせて **心情管理が容易なポーンを作り出す** ことを目的としています。
+
+そのため、ミーム名称を含めたフレーバーについては後付であり、フレーバー側の要請を受けて性能を変化させることは基本的にありません。
+
 ## ミーム "Austere Lifestyle" について
 
 - `痛みは美徳`と`地底人`をベースに、バニラの使いやすい(≒強い)戒律を抽出したもの
