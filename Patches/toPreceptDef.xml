@@ -32,25 +32,6 @@
         </match>
     </Operation>
 
-    <!-- 平板のベッドを使用可能にする -->
-    <Operation Class="PatchOperationConditional">
-        <xpath>/Defs/PreceptDef[defName="SlabBed_Preferred"]/requiredMemes</xpath>
-        <nomatch Class="PatchOperationAdd">
-            <xpath>/Defs/PreceptDef[defName="SlabBed_Preferred"]</xpath>
-            <value>
-                <requiredMemes>
-                    <li>PR_CM_AustereLifestyle</li>
-                </requiredMemes>
-            </value>
-        </nomatch>
-        <match Class="PatchOperationAdd">
-            <xpath>/Defs/PreceptDef[defName="SlabBed_Preferred"]/requiredMemes</xpath>
-            <value>
-                <li>PR_CM_AustereLifestyle</li>
-            </value>
-        </match>
-    </Operation>
-
     <!-- 荒い生活: 歓迎 -->
     <Operation Class="PatchOperationConditional">
         <xpath>/Defs/PreceptDef[defName="RoughLiving_Welcomed"]/requiredMemes</xpath>

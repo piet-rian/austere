@@ -19,9 +19,6 @@
                 <li>Comfort_Ignored</li>
             </li>
             <li>
-                <li>SlabBed_Preferred</li>
-            </li>
-            <li>
                 <li>RoughLiving_Welcomed</li>
             </li>
             <li>
@@ -54,8 +51,7 @@
         </requireOne>
 
         <addDesignators>
-            <li>SlabBed</li>
-            <li>SlabDoubleBed</li>
+            <!-- no-op -->
         </addDesignators>
 
         <!-- 同意する特性 -->
