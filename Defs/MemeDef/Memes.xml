@@ -35,8 +35,10 @@
                 <li>NutrientPasteEating_DontMind</li>
             </li>
             <li>
-                <!-- ! キノコを気にしない固有戒律  -->
-                <li>FungusEating_DontMind</li>
+                <li>FungusEating_DontMind</li> <!-- ! キノコを気にしない固有戒律  -->
+            </li>
+            <li>
+                <li>PR_CM_meal_simple</li> <!-- ! 豪華な食事、手の込んだ食事、生食材を食べたときの心情変化を無効化する戒律  -->
             </li>
             <li>
                 <li>Slavery_Abhorrent</li>

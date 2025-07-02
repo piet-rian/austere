@@ -10,3 +10,5 @@
 
 - `Textures\UI\Memes\PRCM_Austere.png`
   - <https://www.flaticon.com/free-icon/yoga_6807880>
+- `Textures\UI\Issues\PRCM_MealEating.png`
+  - <https://www.flaticon.com/free-icon/food_2771460>

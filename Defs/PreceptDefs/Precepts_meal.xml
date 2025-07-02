@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!-- 豪華な食事で心情が上がらなくなる戒律を作る -->
+
+    <!-- まず、issue として食事(meal) の定義を追加 -->
+
+    <IssueDef>
+        <defName>PR_CM_meal</defName>
+        <label>meal</label>
+        <iconPath>UI/Issues/PRCM_MealEating</iconPath>
+    </IssueDef>
+
+    <!-- 戒律本体の定義 -->
+
+    <PreceptDef>
+        <defName>PR_CM_meal_simple</defName>
+        <issue>PR_CM_meal</issue>
+        <label>simple</label>
+        <description>Shouldn't be overly laborious with meals.
+            (No more change of mood when eating "Lavish Meal", "Fine Meal", and "Row Food")</description>
+        <impact>Medium</impact>
+        <displayOrderInIssue>0</displayOrderInIssue>
+        <displayOrderInImpact>100</displayOrderInImpact>
+        <requiredMemes>
+            <!-- 他ミームの効能は変えないほうがよいと判断し、austereのみで選択可能とした -->
+            <li>PR_CM_AustereLifestyle</li>
+        </requiredMemes>
+    </PreceptDef>
+
+    <!-- 実働部分については、パッチで行う -->
+</Defs>
