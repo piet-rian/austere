@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-    <!-- ===== 食事に関するThoughtに対して 無効化指定をパッチを入れる ===== -->
-
     <!--
     memo.
         core xml において、以下のような具合で戒律によって Thought を無効化している
-
         ```xml
         <ThoughtDef>
             <defName>SoakingWet</defName>
@@ -13,11 +10,11 @@
                 <li MayRequire="Ludeon.RimWorld.Ideology">RoughLiving_Welcomed</li>
             </nullifyingPrecepts>
         </ThoughtDef>
-
-        これを参考に、食事に関するThoughtDef に対して、PR_CM_meal_simple の無効化指定を追加する。
-    ```
+        ```
+        これを参考に、既存のThoughtDef に対して、無効化のトリガーとなるPreceptDefを追加するパッチを入れる。
     -->
 
+    <!-- ===== 食事に関するThoughtに対して 無効化指定をパッチを入れる ===== -->
     <!-- 豪華な食事(LavishMeal)を食べた -->
     <Operation Class="PatchOperationConditional">
         <xpath>/Defs/ThoughtDef[defName="AteLavishMeal"]/nullifyingPrecepts</xpath>
@@ -75,4 +72,42 @@
         </match>
     </Operation>
 
+    <!-- ===== 寝る場所に関するThoughtに対して 無効化指定をパッチを入れる ===== -->
+    <!-- 宿舎 -->
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/ThoughtDef[defName="SleptInBarracks"]/nullifyingPrecepts</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThoughtDef[defName="SleptInBarracks"]</xpath>
+            <value>
+                <nullifyingPrecepts>
+                    <li>PR_CM_bedroom_not_interested</li>
+                </nullifyingPrecepts>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThoughtDef[defName="SleptInBarracks"]/nullifyingPrecepts</xpath>
+            <value>
+                <li>PR_CM_bedroom_not_interested</li>
+            </value>
+        </match>
+    </Operation>
+
+    <!-- 個室 -->
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/ThoughtDef[defName="SleptInBedroom"]/nullifyingPrecepts</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThoughtDef[defName="SleptInBedroom"]</xpath>
+            <value>
+                <nullifyingPrecepts>
+                    <li>PR_CM_bedroom_not_interested</li>
+                </nullifyingPrecepts>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThoughtDef[defName="SleptInBedroom"]/nullifyingPrecepts</xpath>
+            <value>
+                <li>PR_CM_bedroom_not_interested</li>
+            </value>
+        </match>
+    </Operation>
 </Patch>

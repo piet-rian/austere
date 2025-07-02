@@ -41,6 +41,9 @@
                 <li>PR_CM_meal_simple</li> <!-- ! 豪華な食事、手の込んだ食事、生食材を食べたときの心情変化を無効化する戒律  -->
             </li>
             <li>
+                <li>PR_CM_bedroom_not_interested</li> <!-- ! 豪華な食事、手の込んだ食事、生食材を食べたときの心情変化を無効化する戒律  -->
+            </li>
+            <li>
                 <li>Slavery_Abhorrent</li>
                 <li>Slavery_Horrible</li>
                 <li>Slavery_Disapproved</li>
