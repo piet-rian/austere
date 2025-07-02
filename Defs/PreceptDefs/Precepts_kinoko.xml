@@ -6,7 +6,7 @@
     <PreceptDef>
         <defName>FungusEating_DontMind</defName>
         <issue>FungusEating</issue>
-        <label>Don't Mind</label>
+        <label>Don't care</label>
         <description>Fungus are a common food, not bad and not good.</description>
         <impact>Low</impact>
         <displayOrderInIssue>0</displayOrderInIssue>
