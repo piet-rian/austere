@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <IssueDef>
+        <defName>Indoors</defName>
+        <label>indoors</label>
+        <iconPath>UI/Issues/SmallSpaces</iconPath>
+    </IssueDef>
+
+    <PreceptDef>
+        <defName>PR_CM_Room_Needs_disable</defName>
+        <label>ignore</label>
+        <issue>Indoors</issue>
+        <description>Spatial extent has nothing to do with what we should do.</description>
+        <impact>Medium</impact>
+        <displayOrderInImpact>100</displayOrderInImpact>
+        <requiredMemes>
+            <!-- 他ミームの効能は変えないほうがよいと判断し、austereのみで選択可能とした -->
+            <li>PR_CM_AustereLifestyle</li>
+        </requiredMemes>
+        <disablesNeeds>
+            <li>Indoors</li>
+            <li>Outdoors</li>
+            <li>RoomSize</li>
+        </disablesNeeds>
+    </PreceptDef>
+
+</Defs>

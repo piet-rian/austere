@@ -25,8 +25,7 @@
                 <li>Temperature_Tough</li>
             </li>
             <li>
-                <!-- TODO: 欲求種別が反転する点については要検討  -->
-                <li>Indoors_Acceptable</li>
+                <li>PR_CM_Room_Needs_disable</li> <!-- ! 空間的広さを気にしない固有戒律  -->
             </li>
             <li>
                 <li>NutrientPasteEating_DontMind</li>
