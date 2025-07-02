@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-    <!-- Precepts -->
+    <!-- 定義済みissueであるキノコについて、気にしなくなる戒律を追加 -->
 
     <PreceptDef>
         <defName>FungusEating_DontMind</defName>
