@@ -70,25 +70,6 @@
         </match>
     </Operation>
 
-    <!-- 温度: 屈強 -->
-    <Operation Class="PatchOperationConditional">
-        <xpath>/Defs/PreceptDef[defName="Temperature_Tough"]/requiredMemes</xpath>
-        <nomatch Class="PatchOperationAdd">
-            <xpath>/Defs/PreceptDef[defName="Temperature_Tough"]</xpath>
-            <value>
-                <requiredMemes>
-                    <li>PR_CM_AustereLifestyle</li>
-                </requiredMemes>
-            </value>
-        </nomatch>
-        <match Class="PatchOperationAdd">
-            <xpath>/Defs/PreceptDef[defName="Temperature_Tough"]/requiredMemes</xpath>
-            <value>
-                <li>PR_CM_AustereLifestyle</li>
-            </value>
-        </match>
-    </Operation>
-
     <!-- 狭い空間: 気にしない -->
     <Operation Class="PatchOperationConditional">
         <xpath>/Defs/PreceptDef[defName="Indoors_Acceptable"]/requiredMemes</xpath>
