@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <!-- EN: Don't care -->
+  <FungusEating_DontMind.label>気にしない</FungusEating_DontMind.label>
+  <!-- EN: Fungus are a common food, not bad and not good. -->
+  <FungusEating_DontMind.description>キノコは一般的な食料であり、悪くもなければ良くもありません。</FungusEating_DontMind.description>
+
+</LanguageData>

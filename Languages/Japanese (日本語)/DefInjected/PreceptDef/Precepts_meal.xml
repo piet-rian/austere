@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <!-- EN: simple -->
+  <PR_CM_meal_simple.label>質素</PR_CM_meal_simple.label>
+  <!-- EN: Shouldn't be overly laborious with meals.\n
+   (No more change of mood when eating "Lavish Meal", "Fine Meal", and "Row Food") -->
+  <PR_CM_meal_simple.description>調理に手をかける必要はありません。(豪華な食事、手の込んだ食事、生食材を食べたときの心情変化が無効化されます)</PR_CM_meal_simple.description>
+
+</LanguageData>

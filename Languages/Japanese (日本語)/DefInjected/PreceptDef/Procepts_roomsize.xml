@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <!-- EN: ignore -->
+  <PR_CM_Room_Needs_disable.label>無視</PR_CM_Room_Needs_disable.label>
+  <!-- EN: Spatial extent has nothing to do with what we should do. -->
+  <PR_CM_Room_Needs_disable.description>部屋の広さと我々がなすべきこととは関係のないことです</PR_CM_Room_Needs_disable.description>
+
+</LanguageData>

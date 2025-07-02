@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <!-- EN: austere lifestyle -->
+  <PR_CM_AustereLifestyle.label>質素な生活</PR_CM_AustereLifestyle.label>
+  <!-- EN: Stay away from falsehoods. Let us lead a simple life. By doing so, we will be better able
+  to do what we need to do. -->
+  <PR_CM_AustereLifestyle.description>虚飾から離れましょう。質素な生活を行いましょう。それにより、我々がなすべきことがより良くなされるでしょう。</PR_CM_AustereLifestyle.description>
+  <!-- EN:
+    <li>creation(tag=meme_AustereLifestyle) ->[deity0_name] always yearned for a\n                        simple life, so man
+  shall too.</li>
+    <li>episode(uses=1,tag=meme_AustereLifestyle) ->They worked hard yet didn't\n                        achieve much.
+  [deity0_name] saw, and and taught them to rest.</li>
+    <li>intro(tag=meme_AustereLifestyle) ->The first crashlanded settlers of\n                        [place_name] used to be
+  hardworking people, they build for no reason and\n                        without end. [deity0_name] disliked this,
+  intervened and forced them to\n                        rest.</li>
+    <li>conflict(tag=meme_AustereLifestyle) ->The zealous [foeLeader] made an edict\n                        abolishing simple
+  livestyles for their people. [deity0_name] was angered as\n                        many [memberNamePlural] were worked to
+  death to achieve [foeLeader] dreams.</li>
+    <li>founderJoin(tag=meme_AustereLifestyle) ->One day [founderName] the\n                        [place_job] came along and
+  build themselves a simple hut, despite\n                        [foeLeader]s rules in [place_name]. [memberNamePlural]
+  saw this and over\n                        time, many joined which made [deity0_name] very happy.</li>
+    <li>victory(tag=meme_AustereLifestyle) ->Due to [founderName]'s actions, the\n                        [foeLeader]'s
+  [foeSoldiers] saw [deity0_name]'s truth. Together with the\n                        [memberNamePlural], the [foeSoldiers]
+  went to [foeLeader] and forced them to\n                        work until their death. They now all live a simple
+  lifestyle.</li>
+    <li>setup(tag=meme_AustereLifestyle) ->[founderName] never saw much in\n                        complexity, building
+  himself, but a simple hut.</li>
+    <li>story(uses=1,tag=meme_AustereLifestyle) ->Many saw [founderName]'s hut and\n                        tried their
+  lifestyle. Now, it is more than just that.</li>
+    <li>lessonIntro(tag=meme_AustereLifestyle) ->I saw many people work themselves\n                        to death to
+  achieve meaningless goals. It was obvious that</li>
+    <li>lesson(tag=meme_AustereLifestyle) ->a simple lifestyle is all that should be\n                        needed</li>
+    <li>lesson(tag=meme_AustereLifestyle) ->luxury and complexety are the bane of\n                        our existence</li>
+    <li>lessonReinforcement(tag=meme_AustereLifestyle) ->Why build extensive villas\n                        for few, when you
+  can house thousands.</li>
+    <li>archistBasis(tag=meme_AustereLifestyle) ->Archotechs are machines designed\n                        to help the
+  masses.</li>
+    <li>archistFact(tag=meme_AustereLifestyle) ->The archotechs should want no more\n                        than to assist us
+  in our journey.</li>
+    <li>archistProphecy(tag=meme_AustereLifestyle) ->[inTheEnd], by enforcing out\n                        lifestyle, the
+  archotechs won't be able to disagree, and join us.</li>
+    <li>animistFact(tag=meme_AustereLifestyle) ->The spirits can only be calmed if\n                        we ourselves are
+  calm.</li>
+  -->
+  <PR_CM_AustereLifestyle.descriptionMaker.rules.rulesStrings>TODO</PR_CM_AustereLifestyle.descriptionMaker.rules.rulesStrings>
+  <!-- EN:
+    <li>memeAdjective->efficient</li>
+    <li>memeAdjective->austere</li>
+    <li>memeAdjective->strict</li>
+    <li>memeConcept->simplicity</li>
+    <li>memeLeaderNoun->one</li>
+    <li>memeLeaderAdjective->calm</li>
+    <li>memeLeaderAdjective->collected</li>
+    <li>memeLeaderAdjective->simple</li>
+    <li>memeMoralist->calmer</li>
+    <li>memeMoralist->abolisher</li>
+    <li>memeMoralist->shepherd</li>
+    <li>memeHyphenPrefix->simple</li>
+  -->
+  <PR_CM_AustereLifestyle.generalRules.rulesStrings>TODO</PR_CM_AustereLifestyle.generalRules.rulesStrings>
+  <!-- EN: efficiency -->
+  <PR_CM_AustereLifestyle.symbolPacks.0.adjective>TODO</PR_CM_AustereLifestyle.symbolPacks.0.adjective>
+  <!-- EN: beneficiary -->
+  <PR_CM_AustereLifestyle.symbolPacks.0.member>TODO</PR_CM_AustereLifestyle.symbolPacks.0.member>
+  <!-- EN: efficient -->
+  <PR_CM_AustereLifestyle.symbolPacks.0.theme>TODO</PR_CM_AustereLifestyle.symbolPacks.0.theme>
+  <!-- EN: leisure -->
+  <PR_CM_AustereLifestyle.symbolPacks.1.adjective>TODO</PR_CM_AustereLifestyle.symbolPacks.1.adjective>
+  <!-- EN: Leisurity -->
+  <PR_CM_AustereLifestyle.symbolPacks.1.ideoName>TODO</PR_CM_AustereLifestyle.symbolPacks.1.ideoName>
+  <!-- EN: leisured -->
+  <PR_CM_AustereLifestyle.symbolPacks.1.member>TODO</PR_CM_AustereLifestyle.symbolPacks.1.member>
+  <!-- EN: leisureness -->
+  <PR_CM_AustereLifestyle.symbolPacks.1.theme>TODO</PR_CM_AustereLifestyle.symbolPacks.1.theme>
+
+</LanguageData>

@@ -3,7 +3,8 @@
     <MemeDef>
         <defName>PR_CM_AustereLifestyle</defName>
         <label>austere lifestyle</label>
-        <description>There's much to gain from living a simple yet disicplined life.</description>
+        <description>Stay away from falsehoods. Let us lead a simple life.
+            By doing so, we will be better able to do what we need to do.</description>
         <iconPath>UI/Memes/PRCM_Austere</iconPath>
         <impact>3</impact>
         <renderOrder>175</renderOrder>
