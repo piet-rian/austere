@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <!-- EN: Don't care -->
+  <PR_CM_roomstat_not_interested.label>気にしない</PR_CM_roomstat_not_interested.label>
+  <!-- EN: If the room is luxurious or not, has nothing to do with what we should do. (No more
+  change of mood from room stat.) -->
+  <PR_CM_roomstat_not_interested.description>部屋のできの良さと我々がなすべきこととは関係のないことです(部屋の質を起因とする心情変化が無効化される)</PR_CM_roomstat_not_interested.description>
+
+</LanguageData>

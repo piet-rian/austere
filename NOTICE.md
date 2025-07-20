@@ -12,7 +12,5 @@
   - <https://www.flaticon.com/free-icon/yoga_6807880>
 - `Textures\UI\Issues\PRCM_MealEating.png`
   - <https://www.flaticon.com/free-icon/food_2771460>
-- `Textures\UI\Issues\PRCM_bedroom.png`
-  - <https://www.flaticon.com/free-icon/be_18948478>
-- `Textures\UI\Issues\PRCM_diningroom.png`
-  - <https://www.flaticon.com/free-icon/dining-table_6871856>
+- `Textures\UI\Issues\PRCM_roomstat.png`
+  - <https://www.flaticon.com/free-icon/floor_12326825>

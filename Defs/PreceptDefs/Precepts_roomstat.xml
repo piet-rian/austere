@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- 部屋起因(寝室(囚人含む), 食堂, 娯楽室, 病室)の心情を無効化する戒律の作成 -->
+
+  <!-- まず、issue として部屋の状態(roomstat) の定義を追加 -->
+  <IssueDef>
+    <defName>PR_CM_roomstat</defName>
+    <label>roomstat</label>
+    <iconPath>UI/Issues/PRCM_roomstat</iconPath>
+  </IssueDef>
+
+  <!-- 戒律本体の定義 -->
+  <PreceptDef>
+    <defName>PR_CM_roomstat_not_interested</defName>
+    <issue>PR_CM_roomstat</issue>
+    <label>Don't care</label>
+    <description>If the room is luxurious or not, has nothing to do with what we should do. (No more change of mood from room stat.)</description>
+    <impact>Medium</impact>
+    <displayOrderInIssue>0</displayOrderInIssue>
+    <displayOrderInImpact>100</displayOrderInImpact>
+    <requiredMemes>
+      <!-- 他ミームの効能は変えないほうがよいと判断し、austereのみで選択可能とした -->
+      <li>PR_CM_AustereLifestyle</li>
+    </requiredMemes>
+  </PreceptDef>
+
+  <!-- 実働部分については、パッチ `toThoughtDef_RoomStat.xml` で行う -->
+</Defs>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <!-- ===== 部屋に関するThoughtに対して 無効化指定をパッチを入れる ===== -->
+
+  <!-- 寝室(宿舎) -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThoughtDef[defName="SleptInBarracks"]/nullifyingPrecepts</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>/Defs/ThoughtDef[defName="SleptInBarracks"]</xpath>
+      <value>
+        <nullifyingPrecepts>
+          <li>PR_CM_roomstat_not_interested</li>
+        </nullifyingPrecepts>
+      </value>
+    </nomatch>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/ThoughtDef[defName="SleptInBarracks"]/nullifyingPrecepts</xpath>
+      <value>
+        <li>PR_CM_roomstat_not_interested</li>
+      </value>
+    </match>
+  </Operation>
+
+  <!-- 寝室(個室) -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThoughtDef[defName="SleptInBedroom"]/nullifyingPrecepts</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>/Defs/ThoughtDef[defName="SleptInBedroom"]</xpath>
+      <value>
+        <nullifyingPrecepts>
+          <li>PR_CM_roomstat_not_interested</li>
+        </nullifyingPrecepts>
+      </value>
+    </nomatch>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/ThoughtDef[defName="SleptInBedroom"]/nullifyingPrecepts</xpath>
+      <value>
+        <li>PR_CM_roomstat_not_interested</li>
+      </value>
+    </match>
+  </Operation>
+
+  <!-- 食堂 -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThoughtDef[defName="AteInImpressiveDiningRoom"]/nullifyingPrecepts</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>/Defs/ThoughtDef[defName="AteInImpressiveDiningRoom"]</xpath>
+      <value>
+        <nullifyingPrecepts>
+          <li>PR_CM_roomstat_not_interested</li>
+        </nullifyingPrecepts>
+      </value>
+    </nomatch>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/ThoughtDef[defName="AteInImpressiveDiningRoom"]/nullifyingPrecepts</xpath>
+      <value>
+        <li>PR_CM_roomstat_not_interested</li>
+      </value>
+    </match>
+  </Operation>
+
+  <!-- 娯楽室 -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThoughtDef[defName="JoyActivityInImpressiveRecRoom"]/nullifyingPrecepts</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>/Defs/ThoughtDef[defName="JoyActivityInImpressiveRecRoom"]</xpath>
+      <value>
+        <nullifyingPrecepts>
+          <li>PR_CM_roomstat_not_interested</li>
+        </nullifyingPrecepts>
+      </value>
+    </nomatch>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/ThoughtDef[defName="JoyActivityInImpressiveRecRoom"]/nullifyingPrecepts</xpath>
+      <value>
+        <li>PR_CM_roomstat_not_interested</li>
+      </value>
+    </match>
+  </Operation>
+
+  <!-- 独房 -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThoughtDef[defName="PrisonCell"]/nullifyingPrecepts</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>/Defs/ThoughtDef[defName="PrisonCell"]</xpath>
+      <value>
+        <nullifyingPrecepts>
+          <li>PR_CM_roomstat_not_interested</li>
+        </nullifyingPrecepts>
+      </value>
+    </nomatch>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/ThoughtDef[defName="PrisonCell"]/nullifyingPrecepts</xpath>
+      <value>
+        <li>PR_CM_roomstat_not_interested</li>
+      </value>
+    </match>
+  </Operation>
+
+  <!-- 雑居の囚人 -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThoughtDef[defName="PrisonBarracks"]/nullifyingPrecepts</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>/Defs/ThoughtDef[defName="PrisonBarracks"]</xpath>
+      <value>
+        <nullifyingPrecepts>
+          <li>PR_CM_roomstat_not_interested</li>
+        </nullifyingPrecepts>
+      </value>
+    </nomatch>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/ThoughtDef[defName="PrisonBarracks"]/nullifyingPrecepts</xpath>
+      <value>
+        <li>PR_CM_roomstat_not_interested</li>
+      </value>
+    </match>
+  </Operation>
+
+  <!-- 病室 -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThoughtDef[defName="HospitalPatientRoomStats"]/nullifyingPrecepts</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>/Defs/ThoughtDef[defName="HospitalPatientRoomStats"]</xpath>
+      <value>
+        <nullifyingPrecepts>
+          <li>PR_CM_roomstat_not_interested</li>
+        </nullifyingPrecepts>
+      </value>
+    </nomatch>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/ThoughtDef[defName="HospitalPatientRoomStats"]/nullifyingPrecepts</xpath>
+      <value>
+        <li>PR_CM_roomstat_not_interested</li>
+      </value>
+    </match>
+  </Operation>
+
+</Patch>
